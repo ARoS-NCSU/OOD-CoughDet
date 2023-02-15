@@ -1,4 +1,4 @@
-# Robust Cough Detection with Out-of-Distribution Detection
+# OOD-CoughDet
 
 Code for "Robust Cough Detection with Out-of-Distribution Detection" https://www.techrxiv.org/articles/preprint/Robust_Cough_Detection_with_Out-of-Distribution_Detection/21700379
 
