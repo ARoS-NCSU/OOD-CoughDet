@@ -4,7 +4,7 @@ Code for "Robust Cough Detection with Out-of-Distribution Detection" https://www
 
 ## Dataset :books:
 
-[[Dataset A](https://drive.google.com/drive/u/1/folders/19zBxsh229iwOHoNFk30LLxtxypFdqAxD)]
+[[Dataset A](https://drive.google.com/drive/u/1/folders/17ITho6nIlWE9gHzbZRIGQUZf-tYWf7_M)]
 
 [[Dataset B](https://drive.google.com/drive/u/1/folders/17ITho6nIlWE9gHzbZRIGQUZf-tYWf7_M)]
 
