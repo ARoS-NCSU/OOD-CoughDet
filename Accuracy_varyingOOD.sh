@@ -1,0 +1,6 @@
+#!bin/bash
+models=(1)
+for model in "${models[@]}";do
+#	python '/home/pattri/envs/pattrienv3.7/SCH_Asthma/gitCode/accuracy_with_varying_OODSamples.py' --dataType STFT --windowFunction hann --sampleRate 750 --audioWindowLength 5.0 --n_fft 512 --win_length 256 --n_mels 128 --hoplength 32 --modeltype DiscEntropicEfficientNet --batch_size 16 --dataPath '/home/pattri/envs/pattrienv3.7/SCH_Asthma/MelSpecDatasets' --modelCheckPointPath '/home/pattri/envs/pattrienv3.7/SCH_Asthma/checkpoint' --resultsDirPath '/home/pattri/envs/pattrienv3.7/SCH_Asthma' --seedAndThresholdDict '{"42":"-1.2560981512069702","23":"-1.2512502670288086","121":"-1.2226022481918335"}'
+	python '/home/pattri/envs/pattrienv3.7/SCH_Asthma/gitCode/accuracy_with_varying_OODSamples.py' --dataType STFT --windowFunction hann --sampleRate 750 --audioWindowLength 5.0 --n_fft 1024 --win_length 1024 --n_mels 128 --hoplength 64 --modeltype DiscEntropicEfficientNet --batch_size 16 --dataPath '/home/pattri/envs/pattrienv3.7/SCH_Asthma/MelSpecDatasets' --modelCheckPointPath '/home/pattri/envs/pattrienv3.7/SCH_Asthma/checkpoint' --resultsDirPath '/home/pattri/envs/pattrienv3.7/SCH_Asthma' --seedAndThresholdDict '{"42":"-1.2490856647491455","23":"-1.264561653137207","121":"-1.2872623205184937"}'
+done
