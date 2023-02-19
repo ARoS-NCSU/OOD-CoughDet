@@ -37,9 +37,9 @@ We implemented two models in our work.
 
 ### OOD Density Plots
 Density Plots for Confidence-based OOD Detection and Entropy-based OOD Detection generated from the best performance settings with sampling frequency f = 4 kHz and
-f = 16 kHz separately and window size τ = 5 s (Sections. IV-C and IV-D). The left plot is confidence density and the
-right is the minimum distance score density.
-<img src="./figures/ood_density_new.jpg" alt="drawing" width="800"/> 
+f = 16 kHz separately and window size τ = 5 s (Sections. IV-C and IV-D). The left plot is confidence density and the right is the minimum distance score density.
+
+<img src="./figures/ood_density_new.jpg" alt="drawing" width="600"/> 
 
 
 ## Usage :gear:
