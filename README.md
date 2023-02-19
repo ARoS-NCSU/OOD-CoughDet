@@ -2,7 +2,7 @@
 
 Code for "Robust Cough Detection with Out-of-Distribution Detection" https://www.techrxiv.org/articles/preprint/Robust_Cough_Detection_with_Out-of-Distribution_Detection/21700379
 
-<img src="./figures/Overview.jpg" alt="drawing" width="800"/> 
+<img src="./figures/Overview.png" alt="drawing" width="800"/> 
 Work flow of the robust cough detection with out-of-distribution detection. We first converted audio signals into log
 mel-spectrograms followed by a feature extraction network. Then, we used OOD detection to recognize ID and OOD data. The
 ID data is classified into cough and speech. Note that we used the same network to do OOD detection and cough detection, so
