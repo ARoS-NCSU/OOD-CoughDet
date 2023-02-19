@@ -2,6 +2,13 @@
 
 Code for "Robust Cough Detection with Out-of-Distribution Detection" https://www.techrxiv.org/articles/preprint/Robust_Cough_Detection_with_Out-of-Distribution_Detection/21700379
 
+<img src="./figures/Overview.jpg" alt="drawing" width="800"/> 
+Work flow of the robust cough detection with out-of-distribution detection. We first converted audio signals into log
+mel-spectrograms followed by a feature extraction network. Then, we used OOD detection to recognize ID and OOD data. The
+ID data is classified into cough and speech. Note that we used the same network to do OOD detection and cough detection, so
+no additional computation is involved. This pipeline produces robust cough detection by recognizing and removing unknown
+classes.
+
 ## Dataset :books:
 
 [[Dataset A](https://drive.google.com/drive/u/1/folders/17ITho6nIlWE9gHzbZRIGQUZf-tYWf7_M)]
@@ -28,6 +35,12 @@ We implemented two models in our work.
 - [Learning Confidence Estimates for Neural Networks](https://github.com/uoguelph-mlrg/confidence_estimation)
 - [Entropic Out-of-Distribution Detection](https://github.com/dlmacedo/entropic-out-of-distribution-detection)
 
+### OOD Density Plots
+Density Plots for Confidence-based OOD Detection and Entropy-based OOD Detection generated from the best performance settings with sampling frequency f = 4 kHz and
+f = 16 kHz separately and window size τ = 5 s (Sections. IV-C and IV-D). The left plot is confidence density and the
+right is the minimum distance score density.
+<img src="./figures/ood_density_new.jpg" alt="drawing" width="800"/> 
+
 
 ## Usage :gear:
 Run `train_val.sh` to train models.
@@ -44,3 +57,17 @@ Run `Accuracy_varyingOOD.sh` to test with variant OOD proportion.
   
 ## Main Results :memo:
 
+### OOD Detection Performance for Different Sampling Rates
+<img src="./figures/exp3_compare.png" alt="drawing" width="800"/> 
+
+### OOD Detection Performance for Dfferent Window Sizes
+
+| ID Task          | OOD Task   |
+|:------:|:---:|
+|<img src="./figures/exp3id.jpg" alt="drawing" width="400"/> | <img src="./figures/exp3ood.jpg" alt="drawing" width="400"/>|
+
+### Detection for Different OOD Proportions
+<img src="./figures/exp4.png" alt="drawing" width="800"/> 
+
+
+## Citation :link:
